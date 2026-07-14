@@ -45,7 +45,7 @@ export default function FarmCaseStudies() {
       location: "東京都港区",
       type: "地下鉄高架下活用モデル",
       yield: "月産 3,000kg",
-      image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=800",
+      image: "/images/farm1.png",
       desc: "都心部のデッドスペースを活用し、レストラン向けの高級ハーブ類を生産。収穫後30分以内にシェフの元へ届ける超鮮度物流を実現。"
     },
     {
@@ -53,7 +53,7 @@ export default function FarmCaseStudies() {
       location: "北海道札幌市",
       type: "寒冷地対応型 大規模工場",
       yield: "月産 12,000kg",
-      image: "https://images.unsplash.com/photo-1628183204860-63ce219808a3?auto=format&fit=crop&q=80&w=800",
+      image: "/images/farm2.png",
       desc: "冬季の降雪や低温に影響されない完全閉鎖型。AIによる徹底した温熱環境制御により、暖房エネルギーを従来の40%削減。"
     },
     {
@@ -61,7 +61,7 @@ export default function FarmCaseStudies() {
       location: "UAE ドバイ",
       type: "極限環境向け 水循環モデル",
       yield: "月産 8,000kg",
-      image: "https://images.unsplash.com/photo-1595804364117-640b790d0fa8?auto=format&fit=crop&q=80&w=800",
+      image: "/images/farm3.png",
       desc: "特殊フィルターで空気中の水分を回収し、蒸散した水を98%再利用。水資源が極端に少ない地域での農業を可能にしました。"
     }
   ];

@@ -45,7 +45,7 @@ export default function TechnologySection() {
           <div className="order-2 lg:order-1 relative">
             <div className="tech-image aspect-square max-w-md mx-auto relative rounded-3xl overflow-hidden shadow-2xl">
               <Image 
-                src="https://images.unsplash.com/photo-1530836369250-ef71a3f5e9da?auto=format&fit=crop&q=80&w=800" 
+                src="/images/tech.png" 
                 alt="農業テクノロジーセンサー" 
                 fill 
                 className="object-cover"

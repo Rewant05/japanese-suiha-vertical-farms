@@ -76,7 +76,7 @@ export default function Hero() {
           <div className="relative h-[400px] lg:h-[600px] w-full flex items-center justify-center">
             <div className="hero-image relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image 
-                src="https://images.unsplash.com/photo-1596205623863-7140889ec691?auto=format&fit=crop&q=80&w=800" 
+                src="/images/hero.png" 
                 alt="垂直農法プラント" 
                 fill 
                 className="object-cover"
