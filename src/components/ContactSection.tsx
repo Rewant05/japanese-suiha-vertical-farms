@@ -1,46 +1,10 @@
-"use client";
-
-import { useRef } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(ScrollTrigger, useGSAP);
-}
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export default function ContactSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(() => {
-    gsap.from(".contact-info", {
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 80%",
-      },
-      x: -30,
-      opacity: 0,
-      duration: 0.8,
-    });
-
-    gsap.from(".contact-form", {
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 80%",
-      },
-      x: 30,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power2.out"
-    });
-  }, { scope: containerRef });
-
   return (
-    <section ref={containerRef} className="py-24 bg-gradient-to-br from-suiha-mint/50 to-white relative">
+    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-suiha-mint/50 to-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           <div className="contact-info">
             <span className="text-suiha-green font-bold uppercase tracking-wider text-sm mb-2 block">お問い合わせ</span>
             <h2 className="text-3xl md:text-4xl font-bold text-suiha-dark mb-6">導入のご相談・お問い合わせ</h2>
@@ -55,7 +19,13 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-suiha-dark mb-1">本社</h4>
-                  <p className="text-sm text-suiha-charcoal/70">〒100-0005<br/>東京都千代田区丸の内1-1-1<br/>翠葉テクノロジータワー 24F</p>
+                  <p className="text-sm text-suiha-charcoal/70">
+                    〒100-0005
+                    <br />
+                    東京都千代田区丸の内1-1-1
+                    <br />
+                    翠葉テクノロジータワー 24F
+                  </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -79,21 +49,33 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="contact-form glass-card rounded-3xl p-8">
+          <div className="contact-form bg-white/80 md:backdrop-blur-md border border-white/20 shadow-lg rounded-3xl p-6 sm:p-8">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold text-suiha-dark mb-2">会社名・組織名</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50" placeholder="株式会社翠葉" />
+                  <input
+                    type="text"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50"
+                    placeholder="株式会社翠葉"
+                  />
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-suiha-dark mb-2">お名前</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50" placeholder="山田 太郎" />
+                  <input
+                    type="text"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50"
+                    placeholder="山田 太郎"
+                  />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-semibold text-suiha-dark mb-2">メールアドレス</label>
-                <input type="email" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50" placeholder="taro@example.com" />
+                <input
+                  type="email"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50"
+                  placeholder="taro@example.com"
+                />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-suiha-dark mb-2">お問い合わせ種別</label>
@@ -107,17 +89,24 @@ export default function ContactSection() {
               </div>
               <div>
                 <label className="block text-sm font-semibold text-suiha-dark mb-2">お問い合わせ内容</label>
-                <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50" placeholder="具体的な内容をご記入ください..."></textarea>
+                <textarea
+                  rows={4}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-suiha-green/50 focus:border-suiha-green transition-all bg-white/50"
+                  placeholder="具体的な内容をご記入ください..."
+                />
               </div>
               <button type="button" className="w-full py-4 bg-suiha-green text-white font-bold rounded-xl hover:bg-suiha-dark transition-colors shadow-lg hover:shadow-xl">
                 送信する
               </button>
               <p className="text-xs text-gray-500 text-center mt-4">
-                送信することで、弊社の<a href="/privacy-policy" className="text-suiha-green underline hover:text-suiha-lime">プライバシーポリシー</a>に同意したことになります。
+                送信することで、弊社の
+                <a href="/privacy-policy" className="text-suiha-green underline hover:text-suiha-lime">
+                  プライバシーポリシー
+                </a>
+                に同意したことになります。
               </p>
             </form>
           </div>
-
         </div>
       </div>
     </section>

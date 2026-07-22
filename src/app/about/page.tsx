@@ -8,15 +8,15 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-suiha-white min-h-screen">
-      <div className="bg-suiha-dark text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-grid-pattern bg-[length:40px_40px]"></div>
+      <div className="bg-suiha-dark text-white py-20 sm:py-24 relative overflow-hidden">
+        <div className="hidden sm:block absolute inset-0 opacity-10 bg-grid-pattern bg-[length:40px_40px]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">会社概要</h1>
           <p className="text-xl text-suiha-lime">翠葉ファームテックについて</p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <div>

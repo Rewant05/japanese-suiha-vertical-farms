@@ -31,10 +31,10 @@ export default function TechnologyPage() {
 
   return (
     <div className="bg-white min-h-screen">
-      <div className="bg-suiha-dark text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl border-[1px] border-suiha-lime/20 rounded-full animate-[spin_60s_linear_infinite]"></div>
-           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-3xl border-[1px] border-suiha-mint/20 rounded-full animate-[spin_40s_linear_infinite_reverse]"></div>
+      <div className="bg-suiha-dark text-white py-20 sm:py-24 relative overflow-hidden">
+        <div className="hidden md:block absolute inset-0 opacity-20">
+           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-4xl border-[1px] border-suiha-lime/20 rounded-full motion-safe:animate-[spin_60s_linear_infinite]"></div>
+           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-3xl border-[1px] border-suiha-mint/20 rounded-full motion-safe:animate-[spin_40s_linear_infinite_reverse]"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">テクノロジー</h1>
@@ -42,7 +42,7 @@ export default function TechnologyPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-3xl font-bold text-suiha-dark mb-6">植物の言語を、データに翻訳する</h2>
